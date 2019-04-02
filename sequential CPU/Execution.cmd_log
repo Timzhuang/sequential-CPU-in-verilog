@@ -1,0 +1,3 @@
+vhdtdtfi -lib work {/media/pikachu/study/UCLA/OneDrive - personalmicrosoftsoftware.ucla.edu/cs 152A/proj_4_mem_reg/Execution.v} -lang verilog -prj proj4 -o Execution.spl -module Execution -template /opt/152A/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Execution.spl {/media/pikachu/study/UCLA/OneDrive - personalmicrosoftsoftware.ucla.edu/cs 152A/proj_4_mem_reg/Execution.sym} 
+vhdtdtfi -lang verilog -prj proj4 -o "/media/pikachu/study/UCLA/OneDrive - personalmicrosoftsoftware.ucla.edu/cs 152A/proj_4_mem_reg/Execution.tfi" -lib work "/media/pikachu/study/UCLA/OneDrive - personalmicrosoftsoftware.ucla.edu/cs 152A/proj_4_mem_reg//Execution.v" -module Execution -template /opt/152A/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

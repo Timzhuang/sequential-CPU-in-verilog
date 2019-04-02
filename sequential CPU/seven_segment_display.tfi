@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+seven_segment_display instance_name (
+    .clk_fast(clk_fast), 
+    .clk_slow(clk_slow), 
+    .BCD(BCD), 
+    .sel(sel), 
+    .blink_bit(blink_bit), 
+    .Anode_Activate(Anode_Activate), 
+    .LED_out(LED_out)
+    );
+
+

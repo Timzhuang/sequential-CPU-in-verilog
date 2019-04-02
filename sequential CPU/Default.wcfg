@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/media/pikachu/study/UCLA/OneDrive - personalmicrosoftsoftware.ucla.edu/cs 152A/final project/proj_4_seq_no_testing/top_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/top_test/RIP" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RIP[63:0]</obj_property>
+      <obj_property name="ObjectShortName">RIP[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_test/uut/decode_writeback_ins/rf_ins/rf[4]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[4,63:0]</obj_property>
+      <obj_property name="ObjectShortName">rf[4,63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_test/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+</wave_config>

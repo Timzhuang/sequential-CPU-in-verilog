@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+Display_Warper instance_name (
+    .clock(clock), 
+    .we(we), 
+    .num(num), 
+    .Anode_Activate(Anode_Activate), 
+    .LED_out(LED_out)
+    );
+
+

@@ -1,0 +1,1642 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/seven_segment_display.v" into library work
+Parsing module <seven_segment_display>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/register_file.v" into library work
+Parsing module <register_file>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank9.v" into library work
+Parsing module <bank9>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank8.v" into library work
+Parsing module <bank8>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank7.v" into library work
+Parsing module <bank7>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank6.v" into library work
+Parsing module <bank6>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank5.v" into library work
+Parsing module <bank5>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank4.v" into library work
+Parsing module <bank4>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank3.v" into library work
+Parsing module <bank3>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank2.v" into library work
+Parsing module <bank2>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank15.v" into library work
+Parsing module <bank15>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank14.v" into library work
+Parsing module <bank14>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank13.v" into library work
+Parsing module <bank13>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank12.v" into library work
+Parsing module <bank12>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank11.v" into library work
+Parsing module <bank11>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank10.v" into library work
+Parsing module <bank10>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank1.v" into library work
+Parsing module <bank1>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank0.v" into library work
+Parsing module <bank0>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Display_Warper.v" into library work
+Parsing module <Display_Reg>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/cond.v" into library work
+Parsing module <cond>.
+Parsing verilog file "cpu_definitions.v" included at line 27.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/CC.v" into library work
+Parsing module <cc>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/alu.v" into library work
+Parsing module <alu>.
+Parsing verilog file "cpu_definitions.v" included at line 26.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Update_PC.v" into library work
+Parsing module <Update_PC>.
+Parsing verilog file "cpu_definitions.v" included at line 30.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Memory_Access.v" into library work
+Parsing module <Memory_Access>.
+Parsing verilog file "cpu_definitions.v" included at line 32.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" into library work
+Parsing module <memory>.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Fetch.v" into library work
+Parsing module <Fetch>.
+Parsing verilog file "cpu_definitions.v" included at line 32.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Execution.v" into library work
+Parsing module <Execution>.
+Parsing verilog file "cpu_definitions.v" included at line 36.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Decode_WriteBack.v" into library work
+Parsing module <Decode_WriteBack>.
+Parsing verilog file "cpu_definitions.v" included at line 35.
+Analyzing Verilog file "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/toppp.v" into library work
+Parsing module <top>.
+Parsing verilog file "cpu_definitions.v" included at line 28.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/toppp.v" Line 136: Port m_ok is not connected to this instance
+
+Elaborating module <top>.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/toppp.v" Line 58: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/toppp.v" Line 61: Result of 6-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <Fetch>.
+
+Elaborating module <Execution>.
+
+Elaborating module <alu>.
+
+Elaborating module <cc>.
+
+Elaborating module <cond>.
+
+Elaborating module <Display_Reg>.
+
+Elaborating module <seven_segment_display>.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/seven_segment_display.v" Line 46: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/seven_segment_display.v" Line 69: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <Decode_WriteBack>.
+
+Elaborating module <register_file>.
+
+Elaborating module <Memory_Access>.
+
+Elaborating module <memory>.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 52: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 59: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 79: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 85: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 91: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 98: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 104: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 110: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 117: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 123: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 129: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 135: Result of 32-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 136: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 142: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 143: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 149: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 150: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 156: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 157: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 163: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 164: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 170: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 171: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 177: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v" Line 178: Result of 32-bit expression is truncated to fit in 7-bit target.
+
+Elaborating module <bank0>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank0.v" Line 39: Empty module <bank0> remains a black box.
+
+Elaborating module <bank1>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank1.v" Line 39: Empty module <bank1> remains a black box.
+
+Elaborating module <bank2>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank2.v" Line 39: Empty module <bank2> remains a black box.
+
+Elaborating module <bank3>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank3.v" Line 39: Empty module <bank3> remains a black box.
+
+Elaborating module <bank4>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank4.v" Line 39: Empty module <bank4> remains a black box.
+
+Elaborating module <bank5>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank5.v" Line 39: Empty module <bank5> remains a black box.
+
+Elaborating module <bank6>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank6.v" Line 39: Empty module <bank6> remains a black box.
+
+Elaborating module <bank7>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank7.v" Line 39: Empty module <bank7> remains a black box.
+
+Elaborating module <bank8>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank8.v" Line 39: Empty module <bank8> remains a black box.
+
+Elaborating module <bank9>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank9.v" Line 39: Empty module <bank9> remains a black box.
+
+Elaborating module <bank10>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank10.v" Line 39: Empty module <bank10> remains a black box.
+
+Elaborating module <bank11>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank11.v" Line 39: Empty module <bank11> remains a black box.
+
+Elaborating module <bank12>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank12.v" Line 39: Empty module <bank12> remains a black box.
+
+Elaborating module <bank13>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank13.v" Line 39: Empty module <bank13> remains a black box.
+
+Elaborating module <bank14>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank14.v" Line 39: Empty module <bank14> remains a black box.
+
+Elaborating module <bank15>.
+WARNING:HDLCompiler:1499 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/ipcore_dir/bank15.v" Line 39: Empty module <bank15> remains a black box.
+
+Elaborating module <Update_PC>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/toppp.v".
+        IHALT = 4'b0000
+        INOP = 4'b0001
+        IRRMOVQ = 4'b0010
+        IIRMOVQ = 4'b0011
+        IRMMOVQ = 4'b0100
+        IMRMOVQ = 4'b0101
+        IOPQ = 4'b0110
+        IJXX = 4'b0111
+        ICALL = 4'b1000
+        IRET = 4'b1001
+        IPUSHQ = 4'b1010
+        IPOPQ = 4'b1011
+        IDISP = 4'b1100
+        IBTN = 4'b1101
+        FNONE = 4'b0000
+        UNCOND = 4'b0000
+        RRSP = 4'b0100
+        RRBP = 4'b0101
+        RNONE = 4'b1111
+        ALUADD = 4'b0000
+        ALUXOR = 4'b0011
+        ALUAND = 4'b0010
+        ALUSUB = 4'b0001
+        ALUMUL = 4'b0100
+        BF = 3
+        ZF = 2
+        SF = 1
+        OF = 0
+        C_YES = 4'b0000
+        C_LE = 4'b0001
+        C_L = 4'b0010
+        C_E = 4'b0011
+        C_NE = 4'b0100
+        C_GE = 4'b0101
+        C_G = 4'b0110
+        C_B = 4'b0111
+        SBUB = 3'b000
+        SAOK = 3'b001
+        SHLT = 3'b010
+        SADR = 3'b011
+        SINS = 3'b100
+        state_init = 4'b0000
+        state_fetch = 4'b0001
+        state_decode = 4'b0010
+        state_execution = 4'b0011
+        state_memory = 4'b0100
+        state_writeback = 4'b0101
+        state_pc = 4'b0110
+        state_wait_pc = 4'b0111
+        state_wait_memory = 4'b1000
+        state_halted = 4'b1001
+INFO:Xst:3210 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/toppp.v" line 136: Output port <m_ok> of the instance <mem_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/toppp.v" line 136: Output port <i_ok> of the instance <mem_ins> is unconnected or connected to loadless signal.
+    Found 5-bit register for signal <delay>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <reset_register>.
+    Found 64-bit register for signal <RIP>.
+    Found 4-bit register for signal <count>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 12                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <count[3]_GND_1_o_add_2_OUT> created at line 58.
+    Found 5-bit adder for signal <_n0062> created at line 61.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  74 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <Fetch>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Fetch.v".
+        IHALT = 4'b0000
+        INOP = 4'b0001
+        IRRMOVQ = 4'b0010
+        IIRMOVQ = 4'b0011
+        IRMMOVQ = 4'b0100
+        IMRMOVQ = 4'b0101
+        IOPQ = 4'b0110
+        IJXX = 4'b0111
+        ICALL = 4'b1000
+        IRET = 4'b1001
+        IPUSHQ = 4'b1010
+        IPOPQ = 4'b1011
+        IDISP = 4'b1100
+        IBTN = 4'b1101
+        FNONE = 4'b0000
+        UNCOND = 4'b0000
+        RRSP = 4'b0100
+        RRBP = 4'b0101
+        RNONE = 4'b1111
+        ALUADD = 4'b0000
+        ALUXOR = 4'b0011
+        ALUAND = 4'b0010
+        ALUSUB = 4'b0001
+        ALUMUL = 4'b0100
+        BF = 3
+        ZF = 2
+        SF = 1
+        OF = 0
+        C_YES = 4'b0000
+        C_LE = 4'b0001
+        C_L = 4'b0010
+        C_E = 4'b0011
+        C_NE = 4'b0100
+        C_GE = 4'b0101
+        C_G = 4'b0110
+        C_B = 4'b0111
+        SBUB = 3'b000
+        SAOK = 3'b001
+        SHLT = 3'b010
+        SADR = 3'b011
+        SINS = 3'b100
+        state_init = 4'b0000
+        state_fetch = 4'b0001
+        state_decode = 4'b0010
+        state_execution = 4'b0011
+        state_memory = 4'b0100
+        state_writeback = 4'b0101
+        state_pc = 4'b0110
+        state_wait_pc = 4'b0111
+        state_wait_memory = 4'b1000
+        state_halted = 4'b1001
+    Found 64-bit adder for signal <_n0091> created at line 22.
+    Found 64-bit adder for signal <_n0092> created at line 22.
+    Found 64-bit adder for signal <valP> created at line 22.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <Fetch> synthesized.
+
+Synthesizing Unit <Execution>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Execution.v".
+        IHALT = 4'b0000
+        INOP = 4'b0001
+        IRRMOVQ = 4'b0010
+        IIRMOVQ = 4'b0011
+        IRMMOVQ = 4'b0100
+        IMRMOVQ = 4'b0101
+        IOPQ = 4'b0110
+        IJXX = 4'b0111
+        ICALL = 4'b1000
+        IRET = 4'b1001
+        IPUSHQ = 4'b1010
+        IPOPQ = 4'b1011
+        IDISP = 4'b1100
+        IBTN = 4'b1101
+        FNONE = 4'b0000
+        UNCOND = 4'b0000
+        RRSP = 4'b0100
+        RRBP = 4'b0101
+        RNONE = 4'b1111
+        ALUADD = 4'b0000
+        ALUXOR = 4'b0011
+        ALUAND = 4'b0010
+        ALUSUB = 4'b0001
+        ALUMUL = 4'b0100
+        BF = 3
+        ZF = 2
+        SF = 1
+        OF = 0
+        C_YES = 4'b0000
+        C_LE = 4'b0001
+        C_L = 4'b0010
+        C_E = 4'b0011
+        C_NE = 4'b0100
+        C_GE = 4'b0101
+        C_G = 4'b0110
+        C_B = 4'b0111
+        SBUB = 3'b000
+        SAOK = 3'b001
+        SHLT = 3'b010
+        SADR = 3'b011
+        SINS = 3'b100
+        state_init = 4'b0000
+        state_fetch = 4'b0001
+        state_decode = 4'b0010
+        state_execution = 4'b0011
+        state_memory = 4'b0100
+        state_writeback = 4'b0101
+        state_pc = 4'b0110
+        state_wait_pc = 4'b0111
+        state_wait_memory = 4'b1000
+        state_halted = 4'b1001
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <Execution> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/alu.v".
+        IHALT = 4'b0000
+        INOP = 4'b0001
+        IRRMOVQ = 4'b0010
+        IIRMOVQ = 4'b0011
+        IRMMOVQ = 4'b0100
+        IMRMOVQ = 4'b0101
+        IOPQ = 4'b0110
+        IJXX = 4'b0111
+        ICALL = 4'b1000
+        IRET = 4'b1001
+        IPUSHQ = 4'b1010
+        IPOPQ = 4'b1011
+        IDISP = 4'b1100
+        IBTN = 4'b1101
+        FNONE = 4'b0000
+        UNCOND = 4'b0000
+        RRSP = 4'b0100
+        RRBP = 4'b0101
+        RNONE = 4'b1111
+        ALUADD = 4'b0000
+        ALUXOR = 4'b0011
+        ALUAND = 4'b0010
+        ALUSUB = 4'b0001
+        ALUMUL = 4'b0100
+        BF = 3
+        ZF = 2
+        SF = 1
+        OF = 0
+        C_YES = 4'b0000
+        C_LE = 4'b0001
+        C_L = 4'b0010
+        C_E = 4'b0011
+        C_NE = 4'b0100
+        C_GE = 4'b0101
+        C_G = 4'b0110
+        C_B = 4'b0111
+        SBUB = 3'b000
+        SAOK = 3'b001
+        SHLT = 3'b010
+        SADR = 3'b011
+        SINS = 3'b100
+        state_init = 4'b0000
+        state_fetch = 4'b0001
+        state_decode = 4'b0010
+        state_execution = 4'b0011
+        state_memory = 4'b0100
+        state_writeback = 4'b0101
+        state_pc = 4'b0110
+        state_wait_pc = 4'b0111
+        state_wait_memory = 4'b1000
+        state_halted = 4'b1001
+    Found 64-bit subtractor for signal <aluB[63]_aluA[63]_sub_2_OUT> created at line 31.
+    Found 64-bit adder for signal <aluB[63]_aluA[63]_add_4_OUT> created at line 34.
+    Found 64x64-bit multiplier for signal <n0032> created at line 30.
+    Found 1-bit comparator equal for signal <aluA[63]_aluB[63]_equal_15_o> created at line 41
+    Found 1-bit comparator not equal for signal <n0017> created at line 41
+    Found 1-bit comparator not equal for signal <n0023> created at line 43
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <cc>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/CC.v".
+    Found 4-bit register for signal <cc_reg>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <cc> synthesized.
+
+Synthesizing Unit <cond>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/cond.v".
+        IHALT = 4'b0000
+        INOP = 4'b0001
+        IRRMOVQ = 4'b0010
+        IIRMOVQ = 4'b0011
+        IRMMOVQ = 4'b0100
+        IMRMOVQ = 4'b0101
+        IOPQ = 4'b0110
+        IJXX = 4'b0111
+        ICALL = 4'b1000
+        IRET = 4'b1001
+        IPUSHQ = 4'b1010
+        IPOPQ = 4'b1011
+        IDISP = 4'b1100
+        IBTN = 4'b1101
+        FNONE = 4'b0000
+        UNCOND = 4'b0000
+        RRSP = 4'b0100
+        RRBP = 4'b0101
+        RNONE = 4'b1111
+        ALUADD = 4'b0000
+        ALUXOR = 4'b0011
+        ALUAND = 4'b0010
+        ALUSUB = 4'b0001
+        ALUMUL = 4'b0100
+        BF = 3
+        ZF = 2
+        SF = 1
+        OF = 0
+        C_YES = 4'b0000
+        C_LE = 4'b0001
+        C_L = 4'b0010
+        C_E = 4'b0011
+        C_NE = 4'b0100
+        C_GE = 4'b0101
+        C_G = 4'b0110
+        C_B = 4'b0111
+        SBUB = 3'b000
+        SAOK = 3'b001
+        SHLT = 3'b010
+        SADR = 3'b011
+        SINS = 3'b100
+        state_init = 4'b0000
+        state_fetch = 4'b0001
+        state_decode = 4'b0010
+        state_execution = 4'b0011
+        state_memory = 4'b0100
+        state_writeback = 4'b0101
+        state_pc = 4'b0110
+        state_wait_pc = 4'b0111
+        state_wait_memory = 4'b1000
+        state_halted = 4'b1001
+    Found 1-bit 8-to-1 multiplexer for signal <_n0031> created at line 24.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <cond> synthesized.
+
+Synthesizing Unit <Display_Reg>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Display_Warper.v".
+    Found 16-bit register for signal <BCD>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <Display_Reg> synthesized.
+
+Synthesizing Unit <mod_14u_4u>.
+    Related source file is "".
+    Found 18-bit adder for signal <n0565> created at line 0.
+    Found 18-bit adder for signal <GND_9_o_b[3]_add_1_OUT> created at line 0.
+    Found 17-bit adder for signal <n0569> created at line 0.
+    Found 17-bit adder for signal <GND_9_o_b[3]_add_3_OUT> created at line 0.
+    Found 16-bit adder for signal <n0573> created at line 0.
+    Found 16-bit adder for signal <GND_9_o_b[3]_add_5_OUT> created at line 0.
+    Found 15-bit adder for signal <n0577> created at line 0.
+    Found 15-bit adder for signal <GND_9_o_b[3]_add_7_OUT> created at line 0.
+    Found 14-bit adder for signal <n0581> created at line 0.
+    Found 14-bit adder for signal <a[13]_b[3]_add_9_OUT> created at line 0.
+    Found 14-bit adder for signal <n0585> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_9_o_add_11_OUT> created at line 0.
+    Found 14-bit adder for signal <n0589> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_9_o_add_13_OUT> created at line 0.
+    Found 14-bit adder for signal <n0593> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_9_o_add_15_OUT> created at line 0.
+    Found 14-bit adder for signal <n0597> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_9_o_add_17_OUT> created at line 0.
+    Found 14-bit adder for signal <n0601> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_9_o_add_19_OUT> created at line 0.
+    Found 14-bit adder for signal <n0605> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_9_o_add_21_OUT> created at line 0.
+    Found 14-bit adder for signal <n0609> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_9_o_add_23_OUT> created at line 0.
+    Found 14-bit adder for signal <n0613> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_9_o_add_25_OUT> created at line 0.
+    Found 14-bit adder for signal <n0617> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_9_o_add_27_OUT> created at line 0.
+    Found 14-bit adder for signal <n0621> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_9_o_add_29_OUT> created at line 0.
+    Found 18-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Summary:
+	inferred  30 Adder/Subtractor(s).
+	inferred  15 Comparator(s).
+	inferred 197 Multiplexer(s).
+Unit <mod_14u_4u> synthesized.
+
+Synthesizing Unit <div_14u_4u>.
+    Related source file is "".
+    Found 18-bit adder for signal <GND_10_o_b[3]_add_1_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_10_o_b[3]_add_3_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_10_o_b[3]_add_5_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_10_o_b[3]_add_7_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_b[3]_add_9_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_10_o_add_11_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_10_o_add_13_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_10_o_add_15_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_10_o_add_17_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_10_o_add_19_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_10_o_add_21_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_10_o_add_23_OUT[13:0]> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_10_o_add_25_OUT[13:0]> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_10_o_add_27_OUT[13:0]> created at line 0.
+    Found 18-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Summary:
+	inferred  14 Adder/Subtractor(s).
+	inferred  15 Comparator(s).
+	inferred 157 Multiplexer(s).
+Unit <div_14u_4u> synthesized.
+
+Synthesizing Unit <div_14u_7u>.
+    Related source file is "".
+    Found 21-bit adder for signal <GND_11_o_b[6]_add_1_OUT> created at line 0.
+    Found 20-bit adder for signal <GND_11_o_b[6]_add_3_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_11_o_b[6]_add_5_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_11_o_b[6]_add_7_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_11_o_b[6]_add_9_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_11_o_b[6]_add_11_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_11_o_b[6]_add_13_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_b[6]_add_15_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_11_o_add_17_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_11_o_add_19_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_11_o_add_21_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_11_o_add_23_OUT[13:0]> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_11_o_add_25_OUT[13:0]> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_11_o_add_27_OUT[13:0]> created at line 0.
+    Found 21-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Summary:
+	inferred  14 Adder/Subtractor(s).
+	inferred  15 Comparator(s).
+	inferred 157 Multiplexer(s).
+Unit <div_14u_7u> synthesized.
+
+Synthesizing Unit <div_14u_10u>.
+    Related source file is "".
+    Found 24-bit adder for signal <GND_12_o_b[9]_add_1_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_12_o_b[9]_add_3_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_12_o_b[9]_add_5_OUT> created at line 0.
+    Found 21-bit adder for signal <GND_12_o_b[9]_add_7_OUT> created at line 0.
+    Found 20-bit adder for signal <GND_12_o_b[9]_add_9_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_12_o_b[9]_add_11_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_12_o_b[9]_add_13_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_12_o_b[9]_add_15_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_12_o_b[9]_add_17_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_12_o_b[9]_add_19_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_b[9]_add_21_OUT> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_12_o_add_23_OUT[13:0]> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_12_o_add_25_OUT[13:0]> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_12_o_add_27_OUT[13:0]> created at line 0.
+    Found 24-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Summary:
+	inferred  14 Adder/Subtractor(s).
+	inferred  15 Comparator(s).
+	inferred 157 Multiplexer(s).
+Unit <div_14u_10u> synthesized.
+
+Synthesizing Unit <seven_segment_display>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/seven_segment_display.v".
+    Found 4-bit register for signal <Anode_Activate>.
+    Found 4-bit register for signal <LED_BCD>.
+    Found 2-bit register for signal <LED_activating_counter>.
+    Found 11-bit register for signal <counter>.
+    Found 11-bit adder for signal <counter[10]_GND_13_o_add_1_OUT> created at line 46.
+    Found 2-bit adder for signal <GND_13_o_LED_activating_counter[1]_add_10_OUT> created at line 69.
+    Found 4x4-bit Read Only RAM for signal <LED_activating_counter[1]_GND_13_o_wide_mux_8_OUT>
+    Found 16x7-bit Read Only RAM for signal <LED_out>
+    Found 4-bit 4-to-1 multiplexer for signal <LED_activating_counter[1]_BCD[15]_wide_mux_9_OUT> created at line 50.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <seven_segment_display> synthesized.
+
+Synthesizing Unit <Decode_WriteBack>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Decode_WriteBack.v".
+        IHALT = 4'b0000
+        INOP = 4'b0001
+        IRRMOVQ = 4'b0010
+        IIRMOVQ = 4'b0011
+        IRMMOVQ = 4'b0100
+        IMRMOVQ = 4'b0101
+        IOPQ = 4'b0110
+        IJXX = 4'b0111
+        ICALL = 4'b1000
+        IRET = 4'b1001
+        IPUSHQ = 4'b1010
+        IPOPQ = 4'b1011
+        IDISP = 4'b1100
+        IBTN = 4'b1101
+        FNONE = 4'b0000
+        UNCOND = 4'b0000
+        RRSP = 4'b0100
+        RRBP = 4'b0101
+        RNONE = 4'b1111
+        ALUADD = 4'b0000
+        ALUXOR = 4'b0011
+        ALUAND = 4'b0010
+        ALUSUB = 4'b0001
+        ALUMUL = 4'b0100
+        BF = 3
+        ZF = 2
+        SF = 1
+        OF = 0
+        C_YES = 4'b0000
+        C_LE = 4'b0001
+        C_L = 4'b0010
+        C_E = 4'b0011
+        C_NE = 4'b0100
+        C_GE = 4'b0101
+        C_G = 4'b0110
+        C_B = 4'b0111
+        SBUB = 3'b000
+        SAOK = 3'b001
+        SHLT = 3'b010
+        SADR = 3'b011
+        SINS = 3'b100
+        state_init = 4'b0000
+        state_fetch = 4'b0001
+        state_decode = 4'b0010
+        state_execution = 4'b0011
+        state_memory = 4'b0100
+        state_writeback = 4'b0101
+        state_pc = 4'b0110
+        state_wait_pc = 4'b0111
+        state_wait_memory = 4'b1000
+        state_halted = 4'b1001
+    Found 64-bit register for signal <valB>.
+    Found 64-bit register for signal <valA>.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+Unit <Decode_WriteBack> synthesized.
+
+Synthesizing Unit <register_file>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/register_file.v".
+    Found 960-bit register for signal <n0056[959:0]>.
+    Found 64-bit 15-to-1 multiplexer for signal <srcA[3]_X_10_o_wide_mux_40_OUT> created at line 49.
+    Found 64-bit 15-to-1 multiplexer for signal <srcB[3]_X_10_o_wide_mux_43_OUT> created at line 50.
+    Summary:
+	inferred 960 D-type flip-flop(s).
+	inferred  34 Multiplexer(s).
+Unit <register_file> synthesized.
+
+Synthesizing Unit <Memory_Access>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Memory_Access.v".
+        IHALT = 4'b0000
+        INOP = 4'b0001
+        IRRMOVQ = 4'b0010
+        IIRMOVQ = 4'b0011
+        IRMMOVQ = 4'b0100
+        IMRMOVQ = 4'b0101
+        IOPQ = 4'b0110
+        IJXX = 4'b0111
+        ICALL = 4'b1000
+        IRET = 4'b1001
+        IPUSHQ = 4'b1010
+        IPOPQ = 4'b1011
+        IDISP = 4'b1100
+        IBTN = 4'b1101
+        FNONE = 4'b0000
+        UNCOND = 4'b0000
+        RRSP = 4'b0100
+        RRBP = 4'b0101
+        RNONE = 4'b1111
+        ALUADD = 4'b0000
+        ALUXOR = 4'b0011
+        ALUAND = 4'b0010
+        ALUSUB = 4'b0001
+        ALUMUL = 4'b0100
+        BF = 3
+        ZF = 2
+        SF = 1
+        OF = 0
+        C_YES = 4'b0000
+        C_LE = 4'b0001
+        C_L = 4'b0010
+        C_E = 4'b0011
+        C_NE = 4'b0100
+        C_GE = 4'b0101
+        C_G = 4'b0110
+        C_B = 4'b0111
+        SBUB = 3'b000
+        SAOK = 3'b001
+        SHLT = 3'b010
+        SADR = 3'b011
+        SINS = 3'b100
+        state_init = 4'b0000
+        state_fetch = 4'b0001
+        state_decode = 4'b0010
+        state_execution = 4'b0011
+        state_memory = 4'b0100
+        state_writeback = 4'b0101
+        state_pc = 4'b0110
+        state_wait_pc = 4'b0111
+        state_wait_memory = 4'b1000
+        state_halted = 4'b1001
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <Memory_Access> synthesized.
+
+Synthesizing Unit <memory>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/memory.v".
+WARNING:Xst:647 - Input <maddr<63:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <iaddr<63:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <m_ok> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <i_ok> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 64-bit register for signal <valM>.
+    Found 6-bit subtractor for signal <GND_17_o_GND_17_o_sub_12_OUT> created at line 70.
+    Found 11-bit adder for signal <m_bank_addr_inc> created at line 52.
+    Found 11-bit adder for signal <i_bank_addr_inc> created at line 59.
+    Found 128-bit shifter logical left for signal <GND_17_o_m_bank_offset[3]_shift_left_9_OUT> created at line 68
+    Found 128-bit shifter logical right for signal <GND_17_o_GND_17_o_shift_right_12_OUT> created at line 70
+    Found 64-bit 16-to-1 multiplexer for signal <rdata> created at line 74.
+    Found 16-bit 16-to-1 multiplexer for signal <wea> created at line 74.
+    Found 80-bit 16-to-1 multiplexer for signal <instr> created at line 195.
+    Found 4-bit comparator greater for signal <PWR_18_o_m_bank_offset[3]_LessThan_11_o> created at line 69
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  55 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <memory> synthesized.
+
+Synthesizing Unit <Update_PC>.
+    Related source file is "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/Update_PC.v".
+        IHALT = 4'b0000
+        INOP = 4'b0001
+        IRRMOVQ = 4'b0010
+        IIRMOVQ = 4'b0011
+        IRMMOVQ = 4'b0100
+        IMRMOVQ = 4'b0101
+        IOPQ = 4'b0110
+        IJXX = 4'b0111
+        ICALL = 4'b1000
+        IRET = 4'b1001
+        IPUSHQ = 4'b1010
+        IPOPQ = 4'b1011
+        IDISP = 4'b1100
+        IBTN = 4'b1101
+        FNONE = 4'b0000
+        UNCOND = 4'b0000
+        RRSP = 4'b0100
+        RRBP = 4'b0101
+        RNONE = 4'b1111
+        ALUADD = 4'b0000
+        ALUXOR = 4'b0011
+        ALUAND = 4'b0010
+        ALUSUB = 4'b0001
+        ALUMUL = 4'b0100
+        BF = 3
+        ZF = 2
+        SF = 1
+        OF = 0
+        C_YES = 4'b0000
+        C_LE = 4'b0001
+        C_L = 4'b0010
+        C_E = 4'b0011
+        C_NE = 4'b0100
+        C_GE = 4'b0101
+        C_G = 4'b0110
+        C_B = 4'b0111
+        SBUB = 3'b000
+        SAOK = 3'b001
+        SHLT = 3'b010
+        SADR = 3'b011
+        SINS = 3'b100
+        state_init = 4'b0000
+        state_fetch = 4'b0001
+        state_decode = 4'b0010
+        state_execution = 4'b0011
+        state_memory = 4'b0100
+        state_writeback = 4'b0101
+        state_pc = 4'b0110
+        state_wait_pc = 4'b0111
+        state_wait_memory = 4'b1000
+        state_halted = 4'b1001
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <Update_PC> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 1
+ 64x64-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 174
+ 11-bit adder                                          : 3
+ 14-bit adder                                          : 109
+ 15-bit adder                                          : 11
+ 16-bit adder                                          : 11
+ 17-bit adder                                          : 11
+ 18-bit adder                                          : 11
+ 19-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 2
+ 21-bit adder                                          : 2
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 64-bit adder                                          : 4
+ 64-bit subtractor                                     : 1
+# Registers                                            : 14
+ 1-bit register                                        : 1
+ 11-bit register                                       : 1
+ 16-bit register                                       : 1
+ 2-bit register                                        : 1
+ 4-bit register                                        : 4
+ 5-bit register                                        : 1
+ 64-bit register                                       : 4
+ 960-bit register                                      : 1
+# Comparators                                          : 109
+ 1-bit comparator equal                                : 1
+ 1-bit comparator not equal                            : 2
+ 14-bit comparator lessequal                           : 68
+ 15-bit comparator lessequal                           : 7
+ 16-bit comparator lessequal                           : 7
+ 17-bit comparator lessequal                           : 7
+ 18-bit comparator lessequal                           : 7
+ 19-bit comparator lessequal                           : 2
+ 20-bit comparator lessequal                           : 2
+ 21-bit comparator lessequal                           : 2
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 1371
+ 1-bit 2-to-1 multiplexer                              : 1272
+ 1-bit 8-to-1 multiplexer                              : 1
+ 11-bit 2-to-1 multiplexer                             : 28
+ 128-bit 2-to-1 multiplexer                            : 2
+ 14-bit 2-to-1 multiplexer                             : 9
+ 16-bit 16-to-1 multiplexer                            : 1
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 1
+ 64-bit 15-to-1 multiplexer                            : 2
+ 64-bit 16-to-1 multiplexer                            : 1
+ 64-bit 2-to-1 multiplexer                             : 41
+ 80-bit 16-to-1 multiplexer                            : 1
+# Logic shifters                                       : 2
+ 128-bit shifter logical left                          : 1
+ 128-bit shifter logical right                         : 1
+# FSMs                                                 : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 64-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/bank0.ngc>.
+Reading core <ipcore_dir/bank1.ngc>.
+Reading core <ipcore_dir/bank2.ngc>.
+Reading core <ipcore_dir/bank3.ngc>.
+Reading core <ipcore_dir/bank4.ngc>.
+Reading core <ipcore_dir/bank5.ngc>.
+Reading core <ipcore_dir/bank6.ngc>.
+Reading core <ipcore_dir/bank7.ngc>.
+Reading core <ipcore_dir/bank8.ngc>.
+Reading core <ipcore_dir/bank9.ngc>.
+Reading core <ipcore_dir/bank10.ngc>.
+Reading core <ipcore_dir/bank11.ngc>.
+Reading core <ipcore_dir/bank12.ngc>.
+Reading core <ipcore_dir/bank13.ngc>.
+Reading core <ipcore_dir/bank14.ngc>.
+Reading core <ipcore_dir/bank15.ngc>.
+Loading core <bank0> for timing and area information for instance <bank0>.
+Loading core <bank1> for timing and area information for instance <bank1>.
+Loading core <bank2> for timing and area information for instance <bank2>.
+Loading core <bank3> for timing and area information for instance <bank3>.
+Loading core <bank4> for timing and area information for instance <bank4>.
+Loading core <bank5> for timing and area information for instance <bank5>.
+Loading core <bank6> for timing and area information for instance <bank6>.
+Loading core <bank7> for timing and area information for instance <bank7>.
+Loading core <bank8> for timing and area information for instance <bank8>.
+Loading core <bank9> for timing and area information for instance <bank9>.
+Loading core <bank10> for timing and area information for instance <bank10>.
+Loading core <bank11> for timing and area information for instance <bank11>.
+Loading core <bank12> for timing and area information for instance <bank12>.
+Loading core <bank13> for timing and area information for instance <bank13>.
+Loading core <bank14> for timing and area information for instance <bank14>.
+Loading core <bank15> for timing and area information for instance <bank15>.
+
+Synthesizing (advanced) Unit <seven_segment_display>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <LED_activating_counter>: 1 register on signal <LED_activating_counter>.
+INFO:Xst:3231 - The small RAM <Mram_LED_out> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <LED_BCD>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <LED_out>       |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_LED_activating_counter[1]_GND_13_o_wide_mux_8_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <LED_activating_counter> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <seven_segment_display> synthesized (advanced).
+
+Synthesizing (advanced) Unit <top>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <delay>: 1 register on signal <delay>.
+Unit <top> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Multipliers                                          : 1
+ 64x64-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 110
+ 11-bit adder                                          : 2
+ 14-bit adder                                          : 42
+ 14-bit adder carry in                                 : 56
+ 4-bit adder carry in                                  : 4
+ 5-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 64-bit adder                                          : 2
+ 64-bit adder carry in                                 : 1
+ 64-bit subtractor                                     : 1
+# Counters                                             : 4
+ 11-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 1245
+ Flip-Flops                                            : 1245
+# Comparators                                          : 109
+ 1-bit comparator equal                                : 1
+ 1-bit comparator not equal                            : 2
+ 14-bit comparator lessequal                           : 68
+ 15-bit comparator lessequal                           : 7
+ 16-bit comparator lessequal                           : 7
+ 17-bit comparator lessequal                           : 7
+ 18-bit comparator lessequal                           : 7
+ 19-bit comparator lessequal                           : 2
+ 20-bit comparator lessequal                           : 2
+ 21-bit comparator lessequal                           : 2
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 1370
+ 1-bit 2-to-1 multiplexer                              : 1271
+ 1-bit 8-to-1 multiplexer                              : 1
+ 11-bit 2-to-1 multiplexer                             : 28
+ 128-bit 2-to-1 multiplexer                            : 2
+ 14-bit 2-to-1 multiplexer                             : 9
+ 16-bit 16-to-1 multiplexer                            : 1
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 1
+ 64-bit 15-to-1 multiplexer                            : 2
+ 64-bit 16-to-1 multiplexer                            : 1
+ 64-bit 2-to-1 multiplexer                             : 41
+ 80-bit 16-to-1 multiplexer                            : 1
+# Logic shifters                                       : 2
+ 128-bit shifter logical left                          : 1
+ 128-bit shifter logical right                         : 1
+# FSMs                                                 : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 64-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:10]> with one-hot encoding.
+---------------------
+ State | Encoding
+---------------------
+ 0000  | 0000000001
+ 0001  | 0000000010
+ 0010  | 0000000100
+ 0011  | 0000001000
+ 0100  | 0000010000
+ 1000  | 0000100000
+ 0101  | 0001000000
+ 0110  | 0010000000
+ 0111  | 0100000000
+ 1001  | 1000000000
+---------------------
+WARNING:Xst:2677 - Node <Mmult_n0032_submult_23> of sequential type is unconnected in block <alu>.
+WARNING:Xst:2677 - Node <Mmult_n0032_submult_13> of sequential type is unconnected in block <alu>.
+WARNING:Xst:2677 - Node <Mmult_n0032_submult_3> of sequential type is unconnected in block <alu>.
+WARNING:Xst:2677 - Node <Mmult_n0032_submult_31> of sequential type is unconnected in block <alu>.
+WARNING:Xst:2677 - Node <Mmult_n0032_submult_32> of sequential type is unconnected in block <alu>.
+WARNING:Xst:2677 - Node <Mmult_n0032_submult_33> of sequential type is unconnected in block <alu>.
+WARNING:Xst:2677 - Node <count_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <count_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <count_3> of sequential type is unconnected in block <top>.
+
+Optimizing unit <top> ...
+
+Optimizing unit <Execution> ...
+
+Optimizing unit <Display_Reg> ...
+
+Optimizing unit <mod_14u_4u> ...
+
+Optimizing unit <seven_segment_display> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <Decode_WriteBack> ...
+
+Optimizing unit <register_file> ...
+
+Optimizing unit <Memory_Access> ...
+
+Optimizing unit <memory> ...
+
+Optimizing unit <Fetch> ...
+INFO:Xst:2261 - The FF/Latch <delay_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <Execution_ins/display_ins/counter_0> 
+INFO:Xst:2261 - The FF/Latch <delay_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <Execution_ins/display_ins/counter_1> 
+INFO:Xst:2261 - The FF/Latch <delay_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <Execution_ins/display_ins/counter_2> 
+INFO:Xst:2261 - The FF/Latch <delay_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <Execution_ins/display_ins/counter_3> 
+INFO:Xst:2261 - The FF/Latch <delay_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <Execution_ins/display_ins/counter_4> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 70.
+FlipFlop RIP_0 has been replicated 4 time(s)
+FlipFlop RIP_1 has been replicated 6 time(s)
+FlipFlop RIP_2 has been replicated 4 time(s)
+FlipFlop RIP_3 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1284
+ Flip-Flops                                            : 1284
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 6763
+#      GND                         : 17
+#      INV                         : 11
+#      LUT1                        : 70
+#      LUT2                        : 181
+#      LUT3                        : 186
+#      LUT4                        : 405
+#      LUT5                        : 1779
+#      LUT6                        : 2783
+#      MUXCY                       : 447
+#      MUXF7                       : 284
+#      MUXF8                       : 128
+#      VCC                         : 17
+#      XORCY                       : 455
+# FlipFlops/Latches                : 1284
+#      FD                          : 32
+#      FDE                         : 292
+#      FDR                         : 960
+# RAMS                             : 16
+#      RAMB16BWER                  : 16
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 1
+#      OBUF                        : 19
+# DSPs                             : 10
+#      DSP48A1                     : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1284  out of  18224     7%  
+ Number of Slice LUTs:                 5415  out of   9112    59%  
+    Number used as Logic:              5415  out of   9112    59%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   5547
+   Number with an unused Flip Flop:    4263  out of   5547    76%  
+   Number with an unused LUT:           132  out of   5547     2%  
+   Number of fully used LUT-FF pairs:  1152  out of   5547    20%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    232     9%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               16  out of     32    50%  
+    Number using Block RAM only:         16
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                     10  out of     32    31%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------+---------------------------------------------------------+-------+
+Clock Signal                        | Clock buffer(FF name)                                   | Load  |
+------------------------------------+---------------------------------------------------------+-------+
+count_0                             | BUFG                                                    | 1289  |
+clock_in                            | BUFGP                                                   | 1     |
+Execution_ins/display_ins/counter_10| NONE(Execution_ins/display_ins/LED_activating_counter_1)| 10    |
+------------------------------------+---------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 26.622ns (Maximum Frequency: 37.562MHz)
+   Minimum input arrival time before clock: 2.451ns
+   Maximum output required time after clock: 5.090ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'count_0'
+  Clock period: 26.622ns (frequency: 37.562MHz)
+  Total number of paths / destination ports: 126235308007296 / 3069
+-------------------------------------------------------------------------
+Delay:               26.622ns (Levels of Logic = 53)
+  Source:            mem_ins/bank2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
+  Destination:       Execution_ins/cc_inst/cc_reg_2 (FF)
+  Source Clock:      count_0 rising
+  Destination Clock: count_0 rising
+
+  Data Path: mem_ins/bank2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram to Execution_ins/cc_inst/cc_reg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKB->DOB0    4   1.850   0.788  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (doutb<0>)
+     end scope: 'mem_ins/bank2:doutb<0>'
+     LUT3:I1->O            2   0.203   0.864  mem_ins/iaddr<2>331 (mem_ins/iaddr<2>33)
+     LUT5:I1->O            5   0.203   0.715  mem_ins/iaddr<2>343 (mem_ins/iaddr<2>_mmx_out)
+     LUT3:I2->O           17   0.205   1.028  mem_ins/Mmux_instr11_1 (mem_ins/Mmux_instr11)
+     LUT6:I5->O            7   0.205   0.773  Execution_ins/Mmux_aluA110 (Execution_ins/aluA<0>)
+     DSP48A1:A0->P47      18   4.560   1.049  Execution_ins/alu/Mmult_n0032_submult_0 (Execution_ins/alu/Mmult_n0032_submult_0_P47_to_Mmult_n0032_submult_01)
+     DSP48A1:C30->PCOUT47    1   2.689   0.000  Execution_ins/alu/Mmult_n0032_submult_01 (Execution_ins/alu/Mmult_n0032_submult_01_PCOUT_to_Mmult_n0032_submult_02_PCIN_47)
+     DSP48A1:PCIN47->P47   18   2.264   1.049  Execution_ins/alu/Mmult_n0032_submult_02 (Execution_ins/alu/Mmult_n0032_submult_02_P47_to_Mmult_n0032_submult_03)
+     DSP48A1:C30->P0       1   2.687   0.580  Execution_ins/alu/Mmult_n0032_submult_03 (Execution_ins/alu/Mmult_n0032_submult_0_34)
+     LUT2:I1->O            1   0.205   0.000  Execution_ins/alu/Mmult_n0032_Madd_lut<2> (Execution_ins/alu/Mmult_n0032_Madd_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<2> (Execution_ins/alu/Mmult_n0032_Madd_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<3> (Execution_ins/alu/Mmult_n0032_Madd_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<4> (Execution_ins/alu/Mmult_n0032_Madd_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<5> (Execution_ins/alu/Mmult_n0032_Madd_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<6> (Execution_ins/alu/Mmult_n0032_Madd_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<7> (Execution_ins/alu/Mmult_n0032_Madd_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<8> (Execution_ins/alu/Mmult_n0032_Madd_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<9> (Execution_ins/alu/Mmult_n0032_Madd_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<10> (Execution_ins/alu/Mmult_n0032_Madd_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<11> (Execution_ins/alu/Mmult_n0032_Madd_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<12> (Execution_ins/alu/Mmult_n0032_Madd_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<13> (Execution_ins/alu/Mmult_n0032_Madd_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<14> (Execution_ins/alu/Mmult_n0032_Madd_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<15> (Execution_ins/alu/Mmult_n0032_Madd_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<16> (Execution_ins/alu/Mmult_n0032_Madd_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<17> (Execution_ins/alu/Mmult_n0032_Madd_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<18> (Execution_ins/alu/Mmult_n0032_Madd_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<19> (Execution_ins/alu/Mmult_n0032_Madd_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<20> (Execution_ins/alu/Mmult_n0032_Madd_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<21> (Execution_ins/alu/Mmult_n0032_Madd_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<22> (Execution_ins/alu/Mmult_n0032_Madd_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<23> (Execution_ins/alu/Mmult_n0032_Madd_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<24> (Execution_ins/alu/Mmult_n0032_Madd_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<25> (Execution_ins/alu/Mmult_n0032_Madd_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<26> (Execution_ins/alu/Mmult_n0032_Madd_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<27> (Execution_ins/alu/Mmult_n0032_Madd_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<28> (Execution_ins/alu/Mmult_n0032_Madd_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/Mmult_n0032_Madd_cy<29> (Execution_ins/alu/Mmult_n0032_Madd_cy<29>)
+     XORCY:CI->O           1   0.180   0.580  Execution_ins/alu/Mmult_n0032_Madd_xor<30> (Execution_ins/alu/Mmult_n0032_Madd_62)
+     LUT2:I1->O            1   0.205   0.000  Execution_ins/alu/Mmult_n0032_Madd1_lut<62> (Execution_ins/alu/Mmult_n0032_Madd1_lut<62>)
+     MUXCY:S->O            0   0.172   0.000  Execution_ins/alu/Mmult_n0032_Madd1_cy<62> (Execution_ins/alu/Mmult_n0032_Madd1_cy<62>)
+     XORCY:CI->O           1   0.180   0.580  Execution_ins/alu/Mmult_n0032_Madd1_xor<63> (Execution_ins/alu/n0032<63>)
+     LUT6:I5->O           18   0.205   1.050  Execution_ins/alu/valE<63>4 (Execution_ins/new_cc<1>)
+     LUT6:I5->O            1   0.205   0.000  Execution_ins/alu/cc_out<2>_wg_lut<2> (Execution_ins/alu/cc_out<2>_wg_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  Execution_ins/alu/cc_out<2>_wg_cy<2> (Execution_ins/alu/cc_out<2>_wg_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/cc_out<2>_wg_cy<3> (Execution_ins/alu/cc_out<2>_wg_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/cc_out<2>_wg_cy<4> (Execution_ins/alu/cc_out<2>_wg_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/cc_out<2>_wg_cy<5> (Execution_ins/alu/cc_out<2>_wg_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/cc_out<2>_wg_cy<6> (Execution_ins/alu/cc_out<2>_wg_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/cc_out<2>_wg_cy<7> (Execution_ins/alu/cc_out<2>_wg_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/cc_out<2>_wg_cy<8> (Execution_ins/alu/cc_out<2>_wg_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Execution_ins/alu/cc_out<2>_wg_cy<9> (Execution_ins/alu/cc_out<2>_wg_cy<9>)
+     MUXCY:CI->O           1   0.258   0.000  Execution_ins/alu/cc_out<2>_wg_cy<10> (Execution_ins/new_cc<2>)
+     FDE:D                     0.102          Execution_ins/cc_inst/cc_reg_2
+    ----------------------------------------
+    Total                     26.622ns (17.568ns logic, 9.054ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_in'
+  Clock period: 1.913ns (frequency: 522.821MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.913ns (Levels of Logic = 1)
+  Source:            count_0 (FF)
+  Destination:       count_0 (FF)
+  Source Clock:      clock_in rising
+  Destination Clock: clock_in rising
+
+  Data Path: count_0 to count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  count_0 (count_0)
+     INV:I->O              1   0.206   0.579  Mcount_count_xor<0>11_INV_0 (Result<0>)
+     FD:D                      0.102          count_0
+    ----------------------------------------
+    Total                      1.913ns (0.755ns logic, 1.158ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Execution_ins/display_ins/counter_10'
+  Clock period: 2.190ns (frequency: 456.663MHz)
+  Total number of paths / destination ports: 19 / 10
+-------------------------------------------------------------------------
+Delay:               2.190ns (Levels of Logic = 1)
+  Source:            Execution_ins/display_ins/LED_activating_counter_0 (FF)
+  Destination:       Execution_ins/display_ins/LED_activating_counter_0 (FF)
+  Source Clock:      Execution_ins/display_ins/counter_10 rising
+  Destination Clock: Execution_ins/display_ins/counter_10 rising
+
+  Data Path: Execution_ins/display_ins/LED_activating_counter_0 to Execution_ins/display_ins/LED_activating_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   0.856  Execution_ins/display_ins/LED_activating_counter_0 (Execution_ins/display_ins/LED_activating_counter_0)
+     INV:I->O              1   0.206   0.579  Execution_ins/display_ins/Mcount_LED_activating_counter_xor<0>11_INV_0 (Execution_ins/display_ins/Result<0>1)
+     FD:D                      0.102          Execution_ins/display_ins/LED_activating_counter_0
+    ----------------------------------------
+    Total                      2.190ns (0.755ns logic, 1.435ns route)
+                                       (34.5% logic, 65.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'count_0'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.451ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       Execution_ins/cc_inst/cc_reg_3 (FF)
+  Destination Clock: count_0 rising
+
+  Data Path: button to Execution_ins/cc_inst/cc_reg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.924  button_IBUF (button_IBUF)
+     LUT5:I0->O            1   0.203   0.000  Execution_ins/icode[3]_button_AND_4181_o1 (Execution_ins/icode[3]_button_AND_4181_o)
+     FDE:D                     0.102          Execution_ins/cc_inst/cc_reg_3
+    ----------------------------------------
+    Total                      2.451ns (1.527ns logic, 0.924ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'count_0'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              5.090ns (Levels of Logic = 1)
+  Source:            RIP_3 (FF)
+  Destination:       RIP_out<3> (PAD)
+  Source Clock:      count_0 rising
+
+  Data Path: RIP_3 to RIP_out<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            315   0.447   2.072  RIP_3 (RIP_3)
+     OBUF:I->O                 2.571          RIP_out_3_OBUF (RIP_out<3>)
+    ----------------------------------------
+    Total                      5.090ns (3.018ns logic, 2.072ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Execution_ins/display_ins/counter_10'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              4.821ns (Levels of Logic = 2)
+  Source:            Execution_ins/display_ins/LED_BCD_1 (FF)
+  Destination:       LED_out<6> (PAD)
+  Source Clock:      Execution_ins/display_ins/counter_10 rising
+
+  Data Path: Execution_ins/display_ins/LED_BCD_1 to LED_out<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.021  Execution_ins/display_ins/LED_BCD_1 (Execution_ins/display_ins/LED_BCD_1)
+     LUT4:I0->O            1   0.203   0.579  Execution_ins/display_ins/LED_out<3>1 (LED_out_3_OBUF)
+     OBUF:I->O                 2.571          LED_out_3_OBUF (LED_out<3>)
+    ----------------------------------------
+    Total                      4.821ns (3.221ns logic, 1.600ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Execution_ins/display_ins/counter_10
+------------------------------------+---------+---------+---------+---------+
+                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------+---------+---------+---------+---------+
+Execution_ins/display_ins/counter_10|    2.190|         |         |         |
+count_0                             |    1.579|         |         |         |
+------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_in       |    1.913|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock count_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+count_0        |   26.622|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 27.43 secs
+ 
+--> 
+
+
+Total memory usage is 469552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   59 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

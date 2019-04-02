@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/top_test_isim_beh.exe" -prj "/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/top_test_beh.prj" "work.top_test" "work.glbl" 

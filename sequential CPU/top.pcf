@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Mar 01 13:13:28 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "RIP_out<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "RIP_out<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "RIP_out<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "RIP_out<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "RIP_out<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "RIP_out<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "RIP_out<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "RIP_out<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "clock_in" LOCATE = SITE "V10" LEVEL 1;
+COMP "Anode_Activate<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "Anode_Activate<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "Anode_Activate<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "Anode_Activate<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "button" LOCATE = SITE "B8" LEVEL 1;
+COMP "LED_out<0>" LOCATE = SITE "L14" LEVEL 1;
+COMP "LED_out<1>" LOCATE = SITE "N14" LEVEL 1;
+COMP "LED_out<2>" LOCATE = SITE "M14" LEVEL 1;
+COMP "LED_out<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "LED_out<4>" LOCATE = SITE "U17" LEVEL 1;
+COMP "LED_out<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "LED_out<6>" LOCATE = SITE "T17" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "count_0" BEL "clock_in_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

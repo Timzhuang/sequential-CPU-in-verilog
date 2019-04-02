@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj proj4 -o "/media/pikachu/study/UCLA/OneDrive - personalmicrosoftsoftware.ucla.edu/cs 152A/proj_4_mem_reg/Fetch.tfi" -lib work "/media/pikachu/study/UCLA/OneDrive - personalmicrosoftsoftware.ucla.edu/cs 152A/proj_4_mem_reg//Fetch.v" -module Fetch -template /opt/152A/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+top instance_name (
+    .clock(clock), 
+    .RIP(RIP), 
+    .Anode_Activate(Anode_Activate), 
+    .LED_out(LED_out)
+    );
+
+

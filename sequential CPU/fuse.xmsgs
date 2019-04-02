@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/toppp.v" Line 136: Port <arg fmt="%s" index="1">m_ok</arg> is not connected to this instance
+</msg>
+
+</messages>
+

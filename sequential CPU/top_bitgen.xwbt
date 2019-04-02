@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/top.ncd
+OUTFILE=/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented/top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/opt/152A/14.7/ISE_DS/proj_4_seq_no_testing1_working_implemented
+LICENSE=WebPack
+USER_INFO=211659844_0_0_058
